@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 72px;
+    border-right: 2px solid #22222212;
+}
+
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 16 16;
+}
+
+.sidebar-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-photo {
+    width: 123px;
+    height: 123px;
+}
+
+.profile-photo img {
+    border: none;
+    border-radius: 16px;
+}
+
+.profile-name {
+    font-family: 'Golos Text';
+    font-size: 32px;
+    color: #222222;
+}
+
+.profile-info {
+    font-family: 'Golos Text';
+    font-size: 32px;
+    color: #222222;
+    text-align: center; 
+}
+
+.post-counter {
+    height: 30px;
+    width: 101px;
+    align-items: center;
+    background-color: #F2F3F5;
+    border-radius: 6px;
+    font-family: 'Golos Text'; /* Шрифт */
+    font-size: 15px;
+    color: #222222; /* Цвет текста */
+}
+
+.post-counter-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.frame {
+    width: 323px;
+    height: 323px;
+    object-fit: cover; 
+    border-radius: 2px; 
+}
+

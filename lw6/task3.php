@@ -17,7 +17,7 @@
 
 
     <?php
-    function getZodiacSign($day, $month)
+    function getZodiacSign($day, $month): string
     {
         $zodiacs = [
             ["Козерог", 20],
@@ -42,15 +42,25 @@
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $date = $_POST['date'];
-        list($day, $month, $year) = explode('.', $date);
 
-        if (checkdate($month, $day, $year)) {
-            echo "<p>Ваш знак зодиака: " . getZodiacSign((int) $day, (int) $month) . "</p>";
+        $parts = explode('.', $date);
+
+        if (count($parts) === 3) {
+            $day = (int) $parts[0];
+            $month = (int) $parts[1];
+            $year = (int) $parts[2];
+
+            if (checkdate($month, $day, $year)) {
+                echo "<p>Ваш знак зодиака: " . getZodiacSign($day, $month) . "</p>";
+            } else {
+                echo "<p style='color: red;'>Ошибка: введите корректную дату!</p>";
+            }
         } else {
-            echo "<p>Ошибка: введите корректную дату!</p>";
+            echo "<p style='color: red;'>Ошибка: некорректный формат даты!</p>";
         }
     }
     ?>
+
 
 </body>
 

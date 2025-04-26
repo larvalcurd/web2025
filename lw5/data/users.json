@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Иван Денисов",
+    "avatar": "assets/images/ivan_denisov_avatar.png"
+  },
+  {
+    "id": 2,
+    "name": "Лиза Демина",
+    "avatar": "assets/images/lisa_demina_avatar.png"
+  }
+]

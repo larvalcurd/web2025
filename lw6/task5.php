@@ -20,27 +20,39 @@
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // Получаем начальный и конечный номер билета
         $start = $_POST['start'];
         $end = $_POST['end'];
+        $found = false;
 
-        // Проходим по всем номерам билетов в заданном диапазоне
-        for ($ticket = (int) $start; $ticket <= (int) $end; $ticket++) {
-            // Получаем левую и правую половины билета
-            $leftHalf = (int) ($ticket / 1000);  // Целочисленное деление на 1000 (первые 3 цифры)
-            $rightHalf = $ticket % 1000;        // Остаток от деления на 1000 (последние 3 цифры)
-    
-            // Считаем сумму цифр для каждой половины
+        if (
+            !ctype_digit($start) || !ctype_digit($end) ||
+            strlen($start) !== 6 || strlen($end) !== 6 ||
+            $start < 100000 || $end > 999999 ||
+            $start > $end
+        ) {
+            echo "<p>Ошибка: введите корректные шестизначные номера билетов!</p>";
+            return;
+        }
+
+        for ($ticket = (int)$start; $ticket <= (int)$end; $ticket++) {
+            $leftHalf = (int)($ticket / 1000);
+            $rightHalf = (int)$ticket % 1000;
+
             $firstSum = array_sum(str_split($leftHalf));
             $secondSum = array_sum(str_split($rightHalf));
 
-            // Если суммы равны, выводим билет как счастливый
             if ($firstSum === $secondSum) {
                 echo "<p>$ticket</p>";
+                $found = true;
             }
+        }
+
+        if (!$found) {
+            echo "<p>Счастливых билетов в этом диапазоне не найдено.</p>";
         }
     }
     ?>
+
 
 </body>
 

@@ -15,15 +15,22 @@
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $year = intval($_POST['year']);
+        $input = $_POST['year'];
 
-        if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0) {
-            echo "<p>Год $year является високосным</p>";
+        if (is_numeric($input) && ctype_digit($input)) {
+            $year = intval($input);
+
+            if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0) {
+                echo "<p>YES $year</p>";
+            } else {
+                echo "<p>NO $year</p>";
+            }
         } else {
-            echo "<p>Год $year не является високосным</p>";
+            echo "<p style='color: red;'>Ошибка: введите корректный год/p>";
         }
     }
     ?>
+
 </body>
 
 </html>

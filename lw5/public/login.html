@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/login.css" />
+    <title>login page</title>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-page__left">
+        <h1 class="login__title">Войти</h1>
+        <img
+          class="login__image"
+          src="../assets/images/login_image.png"
+          alt="login_image"
+        />
+      </div>
+      <div class="login-page__right">
+        <form class="login__form" method="POST" action="login.php">
+          <div class="login__field">
+            <label class="login__label" for="email">Электропочта</label>
+            <input
+              class="login__input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <small class="login__hint"
+              >Введите электропочту в формате ****@******</small
+            >
+          </div>
+
+          <div class="login__field">
+            <label class="login__label" for="password">Пароль</label>
+            <input
+              class="login__input"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="login__actions">
+            <button class="login__button" type="submit">Продолжить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

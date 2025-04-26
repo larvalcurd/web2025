@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sidebar {
+  width: 72px;
+  border-right: 2px solid #22222212;
+}
+
+.sidebar__list {
+  list-style-type: none;
+  margin: 16px;
+  padding: 0;
+}
+
+.sidebar__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.feed {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post {
+  width: 474px;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;  
+}
+
+.post__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post__author--name {
+  font-family: "Golos Text";
+  font-size: 14px;
+  color: #222222;
+}
+
+.post__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.post__author {
+  font-family: "Golos Text";
+  font-size: 14px;
+  color: #222222;
+}
+
+.post__edit {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.post__edit-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.post__photo {
+  width: 474px;
+  height: 474px;
+}
+
+.post__like {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.post__text {
+  font-family: "Golos Text";
+  font-size: 14px;
+  color: #222222;
+}
+
+.post__more {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.post__time {
+  font-size: 12px;
+  color: #888;
+}

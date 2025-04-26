@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/home.css" />
+    <title>home page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <nav class="sidebar__nav">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#home">
+                <img
+                  class="sidebar__icon"
+                  src="../assets/images/menu_item_home.svg"
+                  alt="menu_item_home"
+                />
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#profile">
+                <img
+                  class="sidebar__icon"
+                  src="../assets/images/menu_item_profile.svg"
+                  alt="menu_item_profile"
+                />
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#add">
+                <img
+                  class="sidebar__icon"
+                  src="../assets/images/menu_item_add.svg"
+                  alt="menu_item_plus"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="feed">
+        <article class="post">
+          <header class="post__header">
+            <div class="post__author">
+              <img
+                class="post__avatar"
+                src="../assets/images/ivan_denisov_avatar.png"
+                alt="ivan_denisov_avatar.png"
+              />
+              <span class="post__author--name">Ваня Денисов</span>
+            </div>
+            <button class="post__edit">
+              <img
+                class="post__edit-icon"
+                src="../assets/images/edit_post.svg"
+                alt="edit_post.svg"
+              />
+            </button>
+          </header>
+
+          <figure class="post__photo">
+            <img
+              src="../assets/images/post_ivan_denisov.png"
+              alt="post_ivan_denisov"
+            />
+          </figure>
+
+          <section class="post__content">
+            <button class="post__like" aria-label="Поставить лайк">
+              ❤️123
+            </button>
+            <p class="post__text">
+              Так красиво сегодня на улице! Настоящая зима)) Вспоминается
+              Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в гор...
+              <button class="post__more">Еще</button>
+            </p>
+            <time class="post__time" datetime="2025-03-04T12:00:00"
+              >2 часа назад</time
+            >
+          </section>
+        </article>
+
+        <article class="post">
+          <header class="post__header">
+            <div class="post__author">
+              <img
+                class="post__avatar"
+                src="../assets/images/lisa_demina_avatar.png"
+                alt="lisa_demina_avatar"
+              />
+              <span class="post__author-name">Лиза Дёмина</span>
+            </div>
+            <button class="post__edit">
+              <img
+                class="post__edit-icon"
+                src="../assets/images/edit_post.svg"
+                alt="edit_post"
+              />
+            </button>
+          </header>
+
+          <figure class="post__photo">
+            <img
+              src="../assets/images/post_lisa_demina.png"
+              alt="post_lisa_demina"
+              width="474"
+              height="474"
+            />
+          </figure>
+          <section class="post__content">
+            <button class="post__like" aria-label="Поставить лайк">
+              ❤️123
+            </button>
+            <p class="post__text">
+              Так красиво сегодня на улице! Настоящая зима)) Вспоминается
+              Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в гор...
+              <button class="post__more">Еще</button>
+            </p>
+            <time class="post__time" datetime="2025-03-04T12:00:00"
+              >2 часа назад</time
+            >
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

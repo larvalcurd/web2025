@@ -15,7 +15,7 @@
     </form>
 
     <?php
-    function digitToWord($digit)
+    function digitToWord($digit): string
     {
         $words = [
             "Ноль",
@@ -33,13 +33,18 @@
         return isset($words[$digit]) ? $words[$digit] : "Ошибка: введите цифру от 0 до 9";
     }
 
-
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $digit = intval($_POST['digit']);
+        $input = $_POST['digit'];
 
-        echo "<p>Результат: " . digitToWord($digit) . "</p>";
+        if (is_numeric($input) && ctype_digit($input) && $input >= 0 && $input <= 9) {
+            $digit = intval($input);
+            echo "<p>Результат: " . digitToWord($digit) . "</p>";
+        } else {
+            echo "<p style='color: red;'>Ошибка: введите целую цифру от 0 до 9.</p>";
+        }
     }
     ?>
+
 
 </body>
 

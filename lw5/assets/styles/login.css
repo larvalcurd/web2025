@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.login-page__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-page__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__title {
+  font-family: "Golos Text";
+  font-size: 140px;
+  color: #222222;
+}
+
+.login__image {
+  height: 501px;
+  width: 462px;
+  padding-left: 269px;
+}
+
+.login__form {
+  width: 343px;
+}
+
+.login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+  font-family: "Golos Text";
+  font-size: 15px;
+  color: #222222;
+}
+
+.login__input {
+  padding: 13px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f3f5;
+  color: #222222;
+  font-size: 16px;
+  outline: none;
+}
+
+.login__hint {
+  font-family: "Golos Text";
+  font-size: 13px;
+  color: #808080;
+}
+
+.login__actions {
+  margin-top: 32px;
+}
+
+.login__button {
+  padding: 14.5px 125px;
+  font-family: "Golos Text";
+  font-size: 16px;
+  color: #fff;
+  background-color: #222222;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

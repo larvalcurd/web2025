@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/profile.css" />
+    <title>profile page</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#home">
+              <img
+                class="sidebar__icon"
+                src="/images/menu_item_home.svg"
+                alt="Back to main page"
+              />
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#profile">
+              <img
+                class="sidebar__icon"
+                src="/images/menu_item_profile.svg"
+                alt="Profile"
+              />
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#add">
+              <img
+                class="sidebar__icon"
+                src="/images/menu_item_plus.svg"
+                alt="add"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="profile" id="profile">
+      <header class="profile__header">
+        <div class="profile__photo">
+          <img
+            class="profile__photo-img"
+            src="/images/profile_photo_ivan_denisov.png"
+            alt="profile_photo_ivan_denisov"
+          />
+        </div>
+
+        <h1 class="profile__name">Ваня Денисов</h1>
+        <p class="profile__bio">
+          Привет! Я системный аналитик ACME :) Тут моя жизнь только для самых
+          классных!
+        </p>
+      </header>
+
+      <div class="profile__stats">
+        <img
+          class="profile__stats-icon"
+          src="/images/profile_posts.svg"
+          alt="profile__stats-icon"
+        />
+        <span class="profile__stats-count">43 поста</span>
+      </div>
+
+      <div class="profile__gallery gallery">
+        <img class="gallery__frame" src="/images/frame_22.png" alt="frame_22" />
+        <img class="gallery__frame" src="/images/frame_23.png" alt="frame_23" />
+        <img class="gallery__frame" src="/images/frame_24.png" alt="frame_24" />
+        <img class="gallery__frame" src="/images/frame_25.png" alt="frame_25" />
+        <img class="gallery__frame" src="/images/frame_26.png" alt="frame_26" />
+        <img class="gallery__frame" src="/images/frame_27.png" alt="frame_27" />
+        <img class="gallery__frame" src="/images/frame_28.png" alt="frame_28" />
+        <img class="gallery__frame" src="/images/frame_29.png" alt="frame_29" />
+        <img class="gallery__frame" src="/images/frame_30.png" alt="frame_30" />
+        <img class="gallery__frame" src="/images/frame_31.png" alt="frame_31" />
+        <img class="gallery__frame" src="/images/frame_32.png" alt="frame_32" />
+        <img class="gallery__frame" src="/images/frame_33.png" alt="frame_33" />
+        <img class="gallery__frame" src="/images/frame_34.png" alt="frame_34" />
+        <img class="gallery__frame" src="/images/frame_35.png" alt="frame_35" />
+        <img class="gallery__frame" src="/images/frame_36.png" alt="frame_36" />
+      </div>
+    </main>
+  </body>
+</html>
